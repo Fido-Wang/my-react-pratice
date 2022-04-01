@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import PubSub from 'pubsub-js'
 import './index.scss'
 class SearchGithub extends Component {
-
     state = {
         list: [],
         isFirst: true, // 是否第一次打开页面

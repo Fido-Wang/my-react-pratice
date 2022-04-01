@@ -18,7 +18,6 @@ class SearchGithub extends Component {
             error=> {
                 // this.props.updateAppState({ isLoadding: false,err: error.message})
                 PubSub.publish('MY_TOPIC', { isLoadding: false,err: error.message});
-
             }
         )
     }

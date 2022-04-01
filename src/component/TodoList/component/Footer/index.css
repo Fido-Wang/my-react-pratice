@@ -1,0 +1,11 @@
+.footer {
+    width: 90%;
+    height: 60px;
+    margin: 30px auto;
+    line-height: 60px;
+    border-bottom: 2px solid #eee;
+}
+.delete_button {
+    float: right;
+    margin-top: 15px;
+}

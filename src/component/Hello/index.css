@@ -1,0 +1,11 @@
+.title {
+    width: 400px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #3a656a;
+    font-weight: 700;
+    text-shadow: 1px 1px 8px #b0bebf;
+    font-size: 48px;
+    margin: 200px auto;
+}

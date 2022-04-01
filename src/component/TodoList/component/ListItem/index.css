@@ -1,0 +1,14 @@
+.listitem {
+    margin: 10px auto;
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #111;
+    /*margin-top: 10px;*/
+}
+.delete-button {
+    float: right;
+}
+.things_box {
+    margin-left: 30px;
+}

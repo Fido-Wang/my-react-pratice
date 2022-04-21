@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 class About extends Component {
     render() {
+    console.log('about组件收到的props', this.props)
         return (
-            <h3>
+            <h2>
                 About
-            </h3>
+            </h2>
         );
     }
 }

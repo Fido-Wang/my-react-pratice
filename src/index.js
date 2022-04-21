@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Routes, BrowserRouter } from 'react-router-dom'
+import { Routes, BrowserRouter, HashRouter } from 'react-router-dom'
 // import 'antd/dist/antd.css';
 import App from './App';
 

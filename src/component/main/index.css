@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background: pink;
+    display: flex;
+}
+.leftNav {
+    width: 200px;
+    background-color: skyblue;
+}
+.rightContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #db8e8e;
+}
+.header {
+    width: 100%;
+    height: 64px;
+    background-color: yellow;
+}
+.content {
+    flex: 1;
+    background-color: orange;
+}

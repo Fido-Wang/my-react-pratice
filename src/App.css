@@ -6,3 +6,13 @@
     background-color: #eee;
     display: flex;
 }
+
+@font-face {
+    font-family: 'myFamily';
+    src: url('./asset/fonts/Roboto-Regular.ttf');
+}
+
+/*全局字体*/
+* {
+    font-family: 'myFamily';
+}

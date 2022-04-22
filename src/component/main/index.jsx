@@ -14,7 +14,7 @@ class Main extends Component {
         return (
             <div className="container">
                     <div className="leftNav">
-                        <h3>leftNav</h3>
+                        <h3 >leftNav</h3>
                         {/*
                             activeClassName 当前的NavLink标签被选中的时候 就添加该属性值的className
                             activeClassName="active"  可以省略 因为默认选中NavLink标签会自动添加active 的className
@@ -28,10 +28,10 @@ class Main extends Component {
                         </NavLink>*/}
                         {/*<MyNavLink to="/about" children="ABOUT" />*/}
                         <div>
-                            <MyNavLink to="/about" >ABOUT</MyNavLink>
+                            <MyNavLink to="/about" className="left-nav-button">Contained</MyNavLink>
                         </div>
                         <div>
-                            <MyNavLink to="/home" >HOME</MyNavLink>
+                            <MyNavLink to="/home">Contained</MyNavLink>
                         </div>
                     </div>
                     <div className="rightContainer">

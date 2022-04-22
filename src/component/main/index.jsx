@@ -55,7 +55,6 @@ class Main extends Component {
                                 而v6版本匹配到对应的组件后 就不再往下寻找同时也对应的组件*/}
                                 {/*<Route path="/home" element={<Test/>}/>*/}
                             </Routes>
-                                <Outlet />
                         </div>
                     </div>
             </div>

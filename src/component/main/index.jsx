@@ -5,6 +5,8 @@ import { Button } from 'antd';
 import { NavLink, Route, Routes, Redirect, Navigate,Outlet } from 'react-router-dom'
 import Home from './Home'
 import About from "./About";
+import Message from './Home/Pages/Message'
+import News from './Home/Pages/News'
 import Test from "./Test";
 import MyNavLink from '../MyNavLink'
 class Main extends Component {
@@ -25,9 +27,12 @@ class Main extends Component {
                             about
                         </NavLink>*/}
                         {/*<MyNavLink to="/about" children="ABOUT" />*/}
-                        <MyNavLink to="/about" >ABOUT</MyNavLink>
-                        <MyNavLink to="/home" >HOME</MyNavLink>
-                        {/*<MyNavLink to="/test" >Test</MyNavLink>*/}
+                        <div>
+                            <MyNavLink to="/about" >ABOUT</MyNavLink>
+                        </div>
+                        <div>
+                            <MyNavLink to="/home" >HOME</MyNavLink>
+                        </div>
                     </div>
                     <div className="rightContainer">
                         <div className="header">
@@ -36,7 +41,12 @@ class Main extends Component {
                         <div className="content">
                             {/*注册路由*/}
                             <Routes>
-                                <Route path="/home"  element={<Home/>}/>
+                                <Route path="/home"  element={<Home/>}>
+                                    {/*<Route path="message" element={<Message/>}></Route>*/}
+                                    {/* index 属性为默认的路由地址 */}
+                                    <Route index element={<Message/>}></Route>
+                                    <Route path="news" element={<News/>}></Route>
+                                </Route>
                                 <Route path="/about" element={<About/>}/>
                                 <Route path="*" element={ <Navigate to="/home"/>}/>
                                 {/*<Redirect to="/home"/>*/}

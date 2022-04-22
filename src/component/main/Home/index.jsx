@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Routes, Route, } from 'react-router-dom'
+import { Routes, Route, Outlet } from 'react-router-dom'
 import { Button } from 'antd';
 import Message from './Pages/Message'
 import News from './Pages/News'
@@ -12,12 +12,7 @@ class Home extends Component {
                 <h2>Home</h2>
                 <MyNavLink to="/home/message">Message</MyNavLink>
                 <MyNavLink to="/home/news">News</MyNavLink>
-                    {/*<Message></Message>
-                    <News></News>*/}
-                    <Routes>
-                        <Route path="message" element={<Message/>} />
-                        <Route path="news" element={<News/>} />
-                    </Routes>
+                <Outlet/>
             </div>
         );
     }

@@ -9,6 +9,7 @@ import Message from './Home/Pages/Message'
 import News from './Home/Pages/News'
 import Test from "./Test";
 import MyNavLink from '../MyNavLink'
+import MessageDetail  from "./Home/Pages/Message/MessageDetail";
 class Main extends Component {
     render() {
         return (
@@ -44,7 +45,9 @@ class Main extends Component {
                                 <Route path="/home"  element={<Home/>}>
                                     {/*<Route path="message" element={<Message/>}></Route>*/}
                                     {/* index 属性为默认的路由地址 */}
-                                    <Route index element={<Message/>}></Route>
+                                    <Route path="message" element={<Message/>}>
+                                        <Route path=':id' element={<MessageDetail/>}/>
+                                    </Route>
                                     <Route path="news" element={<News/>}></Route>
                                 </Route>
                                 <Route path="/about" element={<About/>}/>

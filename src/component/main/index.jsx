@@ -28,10 +28,10 @@ class Main extends Component {
                         </NavLink>*/}
                         {/*<MyNavLink to="/about" children="ABOUT" />*/}
                         <div>
-                            <MyNavLink to="/about" className="left-nav-button">Contained</MyNavLink>
+                            <MyNavLink to="/about" className="left-nav-button">About</MyNavLink>
                         </div>
                         <div>
-                            <MyNavLink to="/home">Contained</MyNavLink>
+                            <MyNavLink to="/home" className="left-nav-button">Home</MyNavLink>
                         </div>
                     </div>
                     <div className="rightContainer">

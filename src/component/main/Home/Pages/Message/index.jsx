@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link, Routes, Route, Outlet} from 'react-router-dom'
+import MyNavLink from "../../../../MyNavLink";
 
 class Message extends Component {
     state= {
@@ -10,20 +11,21 @@ class Message extends Component {
         ]
     }
     render() {
+        console.log('1111', this.props)
         return (
             <div>
                 <ul>
                     {
                         this.state.messageArr.map(item=> {
                             return (
-                                <Link to={`/home/message/messageDetail/${item.id}`}>
-                                    <li key={item.id}><h4>{item.title}</h4></li>
+                                <Link key={item.id} to={`/home/message/${item.id}`}>
+                                    {item.title}
                                 </Link>
                             )
                         })
                     }
                 </ul>
-                {/*<Outlet/>*/}
+                <Outlet/>
             </div>
         );
     }

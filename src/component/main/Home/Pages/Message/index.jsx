@@ -18,7 +18,7 @@ class Message extends Component {
                     {
                         this.state.messageArr.map(item=> {
                             return (
-                                <Link key={item.id} to={`/home/message/${item.id}`}>
+                                <Link style={{ padding: '12px'}} key={item.id} to={`/home/message/${item.id}`}>
                                     {item.title}
                                 </Link>
                             )

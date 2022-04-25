@@ -10,8 +10,8 @@ class Home extends Component {
         return (
             <div>
                 <h2>Home</h2>
-                <MyNavLink to="/home/message">Message</MyNavLink>
-                <MyNavLink to="/home/news">News</MyNavLink>
+                <MyNavLink style={{ padding: '12px'}} to="/home/message">Message</MyNavLink>
+                <MyNavLink style={{ padding: '12px'}} to="/home/news">News</MyNavLink>
                 <Outlet/>
             </div>
         );

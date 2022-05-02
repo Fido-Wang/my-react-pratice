@@ -7,7 +7,6 @@ import { DownloadOutlined } from '@ant-design/icons';
 import Message from './Pages/Message'
 import News from './Pages/News'
 import MyNavLink from "../../MyNavLink";
-import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 class Home extends Component {
     render() {
         console.log('home组件收到的props', this.props)
@@ -24,9 +23,6 @@ class Home extends Component {
                     <MyNavLink style={{ padding: '12px'}} to="/home/message">Message</MyNavLink>
 
                     <MyNavLink style={{ padding: '12px'}} to="/home/news">News</MyNavLink>
-                </Row>
-                <Row>
-
                 </Row>
 
                 <Outlet/>

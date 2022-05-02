@@ -10,6 +10,7 @@ import News from './Home/Pages/News'
 import Test from "./Test";
 import MyNavLink from '../MyNavLink'
 import MessageDetail  from "./Home/Pages/Message/MessageDetail";
+import ReduxTest from './ReduxTest'
 class Main extends Component {
     render() {
         return (
@@ -34,6 +35,9 @@ class Main extends Component {
                         <div>
                             <MyNavLink to="/home" className="left-nav-button">Home</MyNavLink>
                         </div>
+                        <div>
+                            <MyNavLink to="/reduxTest" className="left-nav-button">redux</MyNavLink>
+                        </div>
                     </div>
                     <div className="rightContainer">
                         <div className="header">
@@ -51,6 +55,8 @@ class Main extends Component {
                                     <Route path="news" element={<News/>}></Route>
                                 </Route>
                                 <Route path="/about" element={<About/>}/>
+                                <Route path="reduxTest" element={<ReduxTest/>}></Route>
+
                                 <Route path="*" element={ <Navigate to="/home"/>}/>
                                 {/*<Redirect to="/home"/>*/}
                                 {/*如果一个路由匹配到多个组件

@@ -16,7 +16,6 @@ function countReducer(preState=init, action) {
         default:
             return preState
     }
-
 }
 
 export default countReducer

@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import './index.css'
-import { Button } from 'antd';
 /*Redirect 已被移除*/
 import { NavLink, Route, Routes, Redirect, Navigate,Outlet } from 'react-router-dom'
 import Home from './Home'
 import About from "./About";
 import Message from './Home/Pages/Message'
 import News from './Home/Pages/News'
+import Amap from './Amap'
+import Echarts from './Echarts'
+import AntDesign from './AntDesignTest'
 import Test from "./Test";
 import MyNavLink from '../MyNavLink'
 import MessageDetail  from "./Home/Pages/Message/MessageDetail";
@@ -17,18 +19,6 @@ class Main extends Component {
             <div className="container">
                     <div className="leftNav">
                         <h3 >leftNav</h3>
-                        {/*
-                            activeClassName 当前的NavLink标签被选中的时候 就添加该属性值的className
-                            activeClassName="active"  可以省略 因为默认选中NavLink标签会自动添加active 的className
-                        */}
-                        {/*<NavLink activeClassName="active"  to="/home">
-                            home
-                        </NavLink>*/}
-
-                        {/*<NavLink activeClassName="active"  to="/about">
-                            about
-                        </NavLink>*/}
-                        {/*<MyNavLink to="/about" children="ABOUT" />*/}
                         <div>
                             <MyNavLink to="/about" className="left-nav-button">About</MyNavLink>
                         </div>
@@ -37,6 +27,15 @@ class Main extends Component {
                         </div>
                         <div>
                             <MyNavLink to="/reduxTest" className="left-nav-button">redux</MyNavLink>
+                        </div>
+                        <div>
+                            <MyNavLink to="/amap" className="left-nav-button">Amap</MyNavLink>
+                        </div>
+                        <div>
+                            <MyNavLink to="/echarts" className="left-nav-button">Echarts</MyNavLink>
+                        </div>
+                        <div>
+                            <MyNavLink to="/antd" className="left-nav-button">AntD</MyNavLink>
                         </div>
                     </div>
                     <div className="rightContainer">
@@ -57,6 +56,9 @@ class Main extends Component {
                                 <Route path="/about" element={<About/>}/>
                                 <Route path="reduxTest" element={<ReduxTest/>}></Route>
 
+                                <Route path="amap" element={<Amap/>}></Route>
+                                <Route path="echarts" element={<Echarts/>}></Route>
+                                <Route path="antd" element={<AntDesign/>}></Route>
                                 <Route path="*" element={ <Navigate to="/home"/>}/>
                                 {/*<Redirect to="/home"/>*/}
                                 {/*如果一个路由匹配到多个组件

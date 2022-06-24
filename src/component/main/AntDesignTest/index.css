@@ -1,0 +1,46 @@
+.ant-design-test-box {
+    width: 100%;
+    height: 100%;
+    background: #ffd668;
+}
+/*.left-nav-bar {*/
+/*    width: 320px;*/
+/*    height: 100%;*/
+/*    border: 1px solid #3a656a;*/
+/*}*/
+.ant-menu {
+    width: 100% !important;
+    height: 100%;
+}
+.ant-layout {
+    height: 100%;
+}
+.ant-layout-header {
+    background: #b0bebf;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.ant-layout-content {
+    padding: 12px 12px 0 12px;
+    display: flex;
+    flex-direction: column;
+}
+.ant-layout-sider {
+
+}
+.left-nav-bar {
+    width: 100%;
+    height: 100%;
+}
+.ant-layout-footer {
+    text-align: center;
+    background: #b0bebf;
+}
+.ant-breadcrumb {
+    height: 32px;
+}
+.ant-card {
+    /*height: 100%;*/
+    flex: 1;
+}
